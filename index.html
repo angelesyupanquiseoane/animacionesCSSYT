@@ -1,0 +1,118 @@
+<html>
+<head>
+    <title>ANIMACION CSS - ANIMATION</title>
+    <style>
+        h1{
+            font-family: "century gothic";
+            color: rgba(216, 112, 147, 0);
+            text-align: center;
+
+            animation-name: titulo;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes titulo{
+            from{
+                color: rgba(216, 112, 147, 0);
+            }
+            to{
+                color: rgba(216, 112, 147, 1);
+            }
+        }
+
+        h2{
+            font-family: "century gothic";
+            text-align: center;
+
+            animation-name: subtitulo;
+            animation-duration: 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: backwards;
+            animation-delay: 3s;
+        }
+
+        @keyframes subtitulo{
+            from{
+                color: rgba(0, 0, 0, 0);
+            }
+            to{
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+
+        img{
+            height: 200px;
+            width: 300px;
+            display: block;
+            margin: auto;
+            opacity: 0;
+
+            animation: imagen 3s 6s 1 forwards;
+
+        }
+
+        @keyframes imagen{
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+
+        .parrafo1{
+            font-family: Arial;
+            color: rgba(0, 0, 255, 0);
+            text-align: center;
+
+            animation: parrafo1 3s 9s 1 forwards;
+
+        }
+
+        @keyframes parrafo1{
+            from{
+                color: rgba(0, 0, 255, 0);
+            }
+            to{
+                color: rgba(0, 0, 255, 1);
+            }
+        }
+
+        .parrafo2{
+            font-family: Arial;
+            color: rgba(137, 43, 226, 0);
+            text-align: center;
+
+            animation: parrafo2 3s 12s 1 forwards;
+        }
+
+        @keyframes parrafo2{
+            from{
+                color: rgba(137, 43, 226, 0);
+            }
+            to{
+                color: rgba(137, 43, 226, 1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>La gran líder que transformó la industria tecnológica</h1>
+    <h2>El impacto de Lisa Su en el crecimiento de AMD</h2>
+    <img src="img/lisa.png">
+    <p class="parrafo1">La Dra. Lisa Su es una destacada ingeniera eléctrica y 
+        ejecutiva estadounidense-taiwanesa, reconocida por liderar 
+        la transformación de AMD como presidenta y directora ejecutiva (CEO) desde 2014. 
+        Bajo su mando, AMD pasó de una crisis financiera a ser líder en computación de alto rendimiento, 
+        IA y semiconductores.</p>
+        
+    <p class="parrafo2">Gracias a su visión estratégica, Lisa Su posicionó a AMD como una de las compañías más importantes en 
+        la fabricación de hardware. Además, es considerada un referente para las mujeres en la ciencia y la ingeniería, 
+        destacando por su disciplina, conocimiento y capacidad para tomar decisiones clave en la industria tecnológica.
+    </p>
+</body>
+</html>
